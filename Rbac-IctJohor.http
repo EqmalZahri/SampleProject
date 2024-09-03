@@ -1,0 +1,6 @@
+@Rbac_IctJohor_HostAddress = http://localhost:5112
+
+GET {{Rbac_IctJohor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

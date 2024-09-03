@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123qwe
+      POSTGRES_DB: rbac_ictjohor
+    ports:
+      - "5432:5432"

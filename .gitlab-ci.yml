@@ -1,0 +1,13 @@
+####### Development ########
+stages:
+    - deploy
+    
+project-dev-build: 
+    only:
+        - development
+    script:
+        - echo "Building docker..."
+        - sudo docker-compose -f docker-compose.development.yml up -d --build
+    stage: deploy
+    tags:
+        - ucm-rbac
